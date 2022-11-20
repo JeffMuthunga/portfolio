@@ -1,8 +1,11 @@
+@import "utilities.css";
 :root {
-    --primary: #61E697;
-    --pure: #FFFFFF;
-    --dark: #232326;
-
+    --primary: #4d94ff;
+    --pure: #adad85;
+    --dark: #660066;
+}
+body {
+    font-family: 'Cormorant', sans-serif;
 }
 
 * {
@@ -12,9 +15,126 @@
 }
 header {
     background: var(--dark);
+    clip-path: polygon(0 0, 100% 0, 70% 80%, 100% 70%, 0 100%);
+    
 }
 .container {
     max-width: 1152px;
     padding: 0,15px;
     margin: auto;
+}
+header nav .left a {
+    color: var(--pure);
+    margin-right: 2rem;
+    text-transform: uppercase;
+    text-decoration: none;    
+    transition: all 0.3s ease;
+}
+header nav .left a:hover {
+    color: var(--primary);
+
+}
+header nav {
+    padding: 2rem 0;
+}
+header nav .brand-logo{
+    margin-right: 10rem;
+}
+img {
+    max-width: 60px;
+    max-height: 60px;
+}
+.hero .left img {
+    max-height: 1200px;
+    max-width: 400px;
+    width: 400px;
+    border-radius: 400px;
+}
+.hero .right {
+    color: var(--pure);
+}
+.hero .right h6 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+.hero .right h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+.hero .right h1 span {
+    color: var(--primary);
+}
+.justify-centre {
+    justify-content: center;
+}
+.hero {
+    padding-bottom: 5rem;
+}
+.container2 {
+    font-size: 30px;
+    margin-left: 700px;
+}
+.container1 {
+    font-size: 30px;
+    margin-bottom: 2rem;
+}
+footer {
+    background: var(--dark);
+    text-align: center;
+}
+footer img {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+footer .footer-text {
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--pure);
+}
+.about {
+    
+    margin-bottom: 3rem;
+}
+.skills {
+    background: white;
+}
+.skills .secton-heading {
+    color: var(--pure);
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.secton-heading + p {
+    color: var(--pure);
+    text-align: center;
+    margin-bottom: 8rem;
+}
+.card-wrapper img {
+    height: 200px;
+}
+.skills .card-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+}
+.skills .card-wrapper .card {
+    background: var(--pure);
+    padding: 3rem 2rem;
+    position: relative;
+    border-radius: 15px 50px;
+}
+.card-wrapper img {
+    height: 200px;
+    position: absolute;
+    top: -1.5rem;
+    left: 50%;
+    transform: translate(-50%);
+}
+.container1 h1 {
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 3rem;
 }
