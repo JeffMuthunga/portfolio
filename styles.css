@@ -138,3 +138,6 @@ footer .footer-text {
     font-size: 40px;
     padding-bottom: 3rem;
 }
+html {
+    scroll-behavior: smooth;
+}
